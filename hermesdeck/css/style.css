@@ -233,7 +233,8 @@ h2#tagline {
 }
 
 #project ul li {
-  font-size: 60px;
+	margin-left: 2em;
+  font-size: 36px;
   text-align: left;
   font-weight: 600;
   list-style: circle;
@@ -294,14 +295,16 @@ SLIDE 4
 
 }
 
-#problems-slide h2 {
-  margin-top: 50px;
-  font-size: 32px;
-  background: white;
-  padding: 10px;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
+#problems-slide  table {
+	margin-top: 20px;
+}
+
+#problems-slide h1 {
+  font-size: 72px;
+  padding: 0px 15px;
+}
+#problems-slide ul {
+	margin: 160px 30px;
 }
 
 #problems-slide h1,
@@ -310,7 +313,7 @@ SLIDE 4
   font-weight: 600;  
 }
 #problems-slide ul li{
-  font-size: 28px;
+  font-size: 48px;
 }
 
 #problems-slide .title th {
