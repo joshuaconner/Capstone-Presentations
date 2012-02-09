@@ -1,0 +1,425 @@
+/******************************************
+TAG DEFINITIONS
+******************************************/
+
+body {
+	background: #faf8f3 url(../images/bg-pattern.png) center top;
+}
+
+ol li {
+	font-family: 'Josefin Slab', serif;
+	font-weight: 300;
+	font-size: 42px;
+	margin: 25px 0 25px 50px;
+}
+
+ul li {
+  font-size: 40px;
+  text-align: left;
+  list-style: circle;
+  color: #595854;
+  margin: 30px;
+}
+
+h1, h2, h3, h4, ul li {
+	font-family: 'Josefin Slab', serif;
+	color: #595854;
+	font-weight: 300;
+}
+
+h1 {
+	font-size: 47px;
+	text-align: center;
+	height: 59px;
+	line-height: 59px;
+}
+/******************************************
+NAVIGATION
+******************************************/
+#nav {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+#nav_left:before, #nav_right:before {
+	display: block;
+	content: '';
+	height: 18px;
+	background: #f3f0e9;
+	border-bottom: 1px solid #efede9;
+}
+#nav_center {
+	width: 960px;
+	height: 18px;
+}
+#nav_center a {
+	display: block;
+	float: left;
+	position: relative;
+	width: 47px;
+	height: 22px;
+	background: url(../images/social-buttons.png) no-repeat -282px 0;
+	border-top: 4px solid #f3f0e9;
+	padding: 18px 0 12px;
+	text-align: center;
+	font-size: 18px;
+	line-height: 22px;
+	color: #cac7c1;
+	text-shadow: #fff 0 1px 0;
+}
+#nav_center a:hover, #nav_center a.current {
+	background-position: -329px 0;
+	color: #615e5a;
+}
+
+#nav_center a .label {
+	display: none;
+	position: absolute;
+	width: 77px;
+	left: -15px;
+	top: 53px;
+	color: #595856;
+	text-shadow: rgba(255, 255, 255, .5) 0 1px 0;
+	text-align: center;
+	font-size: 11px;
+	line-height: 13px;
+}
+
+#nav_center a.current .label, #nav_center a:hover .label {
+	display: block;
+}
+
+#nav_center .filler {
+	height: 56px;
+	width: 35px;
+	background: url(../images/nav-filler.png) repeat-x 0 29px;
+	float: left;
+}
+
+#nav_center .filler:before, #filler_left, #filler_right {
+	content: '';
+	display: block;
+	height: 18px;
+	background: #f3f0e9;
+	border-bottom: 1px solid #efede9;
+}
+
+#filler_left {
+	width: 1px;
+	float: left;
+}
+
+#filler_right {
+	width: 10px;
+	float: left;
+}
+
+/******************************************
+COMMON CLASSES
+******************************************/
+.slide {
+	position: relative;
+	margin: 0;
+	width: 100%;
+	padding: 110px 0 200px;;
+}
+
+.container {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.clear {
+	clear: both;
+}
+
+.transition {
+	height: 71px;
+	width: 100%;
+	background: url(../images/dotted-bg.png) repeat-x 0 93px;
+	text-align: center;
+	padding: 59px 0 0;
+}
+
+.transition .next {
+	display: inline-block;
+	width: 199px;
+	height: 71px;
+	background: url(../images/next-prev-buttons.png) no-repeat 0 0;
+	margin: 0 27px;
+}
+
+.transition .next:hover { background-position: 0 -71px; }
+.transition .next:active { background-position: 0 -142px; }
+.transition .start {
+	display: inline-block;
+	width: 199px;
+	height: 71px;
+	background: url(../images/start-button.png) no-repeat 0 0;
+	margin: 0 27px;
+}
+
+.transition .start:hover { background-position: 0 -71px; }
+.transition .start:active { background-position: 0 -142px; }
+.transition .prev {
+	display: inline-block;
+	width: 199px;
+	height: 71px;
+	background: url(../images/next-prev-buttons.png) no-repeat -199px 0;
+	margin: 0 20px;
+}
+
+.transition .prev:hover { background-position: -199px -71px; }
+.transition .prev:active { background-position: -199px -142px; }
+
+.title {
+	width: 100%;
+	margin: 0 0 25px;
+}	
+.title th {
+	background: url(../images/dotted-bg.png) repeat-x 0 30px;
+}
+
+/******************************************
+SLIDE 1
+******************************************/
+#slide1 {
+  text-align: center;
+	padding: 110px 0 210px;;
+}
+
+#logo {
+	width: 300px;
+	height: 152px;
+	margin: 0 auto;
+}
+#slide1 h1 {
+	margin: 75px 0 40px;
+}
+#slide1 h2 {
+	font-size: 42px;
+}
+#slide1 h3 {
+	font-size: 24px;
+}
+#intro_items {
+	width: 726px;
+	height: 327px;
+	margin: 0 auto 20px;
+}
+/******************************************
+SLIDE 2
+******************************************/
+#project {
+	background: #a2c2cd;
+}
+#project h1 {
+	color: #fff;
+}
+#project .title th {
+	background-image: url(../images/dotted-bg-blue.png);
+}
+
+h2#tagline {
+	font-size: 72px;
+	text-align: center;
+	font-weight: 600;
+	margin: 50px;
+	color: #fff;
+	padding-bottom: 220px;
+}
+
+#project ul li {
+  font-size: 60px;
+  text-align: left;
+  font-weight: 600;
+  list-style: circle;
+  color: #fff;
+}
+
+#project .transition {
+	background-image: url(../images/dotted-bg-blue.png);
+	margin-bottom: 160px;
+	padding-bottom: 160px;
+}
+
+/******************************************
+SLIDE 3
+******************************************/
+.center {
+  text-align: center;
+}
+.center img{
+  line-height: 100px;
+  max-width: 150px;
+  max-height: 150px;
+  padding: 20px;
+  margin: 10px;
+}
+
+#client {
+	background: #faf8f3;
+}
+#client h1 {
+	color: #595854;
+}
+#client .title th {
+	background-image: url(../images/dotted-bg.png);
+}
+	
+h3#tagline {
+	font-size: 72px;
+	text-align: center;
+	font-weight: 600;
+	margin: 50px;
+	color: #595854;
+}
+#client .transition {
+	background-image: url(../images/dotted-bg-blue.png);
+	padding-bottom: 160px;
+}
+
+#client ul{
+}
+	
+/******************************************
+SLIDE 4
+******************************************/
+
+#problems-slide {
+  background: #a2c2cd;
+
+}
+
+#problems-slide h2 {
+  margin-top: 50px;
+  font-size: 32px;
+  background: white;
+  padding: 10px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+}
+
+#problems-slide h1,
+#problems-slide ul li{
+  color: #fff;
+  font-weight: 600;  
+}
+#problems-slide ul li{
+  font-size: 28px;
+}
+
+#problems-slide .title th {
+	background-image: url(../images/dotted-bg-blue.png);
+}
+
+#problems-slide .transition {
+	background-image: url(../images/dotted-bg-blue.png);
+	margin-bottom: 50px;
+	padding-bottom: 50px;
+}
+
+/******************************************
+SLIDE 5
+******************************************/
+#slide5 ul {
+  padding: 100px 0;
+}
+
+#slide5 ul li {
+  font-size: 36px;
+}
+
+/******************************************
+SLIDE 6
+******************************************/
+
+#wireframes-slide {
+	background: #a2c2cd;
+}
+#wireframes-slide h1 {
+	color: #fff;
+}
+#wireframes-slide .title th {
+	background-image: url(../images/dotted-bg-blue.png);
+}
+
+/******************************************
+SLIDE 7
+******************************************/
+#specifications-slide ul{
+  padding: 100px 0;
+}
+
+.main-spec {
+  font-weight: 600;
+  color: #638966;
+}
+
+/******************************************
+SLIDE 8
+******************************************/
+
+#process-slide {
+	background: #a2c2cd;
+}
+#process-slide h1 {
+	color: #fff;
+}
+#process-slide .title th {
+	background-image: url(../images/dotted-bg-blue.png);
+}
+
+#process {
+	width: 323px;
+	height: 550px;
+	background: url(../images/process.png) no-repeat;
+}
+
+/******************************************
+SLIDE 9
+******************************************/
+
+#timeline {
+  margin-left: -110px;
+	width: 1177px;
+	height: 1316px;
+	background: url(../images/timeline.png) no-repeat;
+}
+
+/******************************************
+SLIDE 10
+******************************************/
+
+#challenges {
+	background: #ff5c5c;
+}
+#challenges h1 {
+	color: #fff;
+}
+#challenges .title th {
+	background-image: url(../images/dotted-bg.png);
+}
+
+#challenges ul {
+  padding: 100px 0;
+}
+
+#challenges ul li{
+  color: #fff;
+}
+
+/******************************************
+SLIDE 11
+******************************************/
+#conclusion ul {
+  padding: 100px 0 300px 0;
+}
+
+#conclusion ul li {
+  font-size: 60px;
+}
